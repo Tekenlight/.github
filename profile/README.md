@@ -12,20 +12,26 @@ Designed to be an open source, cross platform lua runtime environment for constr
 Node.js, golang
 
 
-# Repositories
-## efio
-
-
-## luaffifb
-
-
-## lua_schema
-
-
+# Components
 ## evpoco
 
 
 ## service_utils
+
+
+## efio
+Library with these facilities
+1. Thread pool
+2. Event driven and asynchronous FILE IO
+3. Lock free synchronization artifacts
+4. Lock free (Wait free in case of enqueue) data structures, stack and queue
+5. base64 encode/decode and hex encode/decode functions
+
+
+## Customized luaffifb
+
+
+## lua_schema
 
 
 # Dependencies
