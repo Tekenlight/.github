@@ -5,21 +5,21 @@ Designed to be an open source, cross platform lua runtime environment for constr
 #### Goals
 1. IO event driven (async) processing
 2. lua (4GL) for development
-3. Multi threaded, with co-operative multitasking
-4. No need for call backs to achieve multi-tasking
+3. Multi threaded, with co-operative multitasking (switch task upon IO event)
+4. Usage of co-routines to achieve flowing code, i.e. no need for callbacks or promises
 
 #### Inspired by
 Node.js, golang
 
 
-# Components
-## evpoco
+## Components
+### evpoco
 
 
-## service_utils
+### service_utils
 
 
-## efio
+### efio
 Library with these facilities
 1. Thread pool
 2. Event driven and asynchronous FILE IO
@@ -28,32 +28,32 @@ Library with these facilities
 5. base64 encode/decode and hex encode/decode functions
 
 
-## Customized luaffifb
+### Customized luaffifb
 
 
-## lua_schema
+### lua_schema
 
 
-# Dependencies
+## Dependencies
 
-### Customized libxml2
+#### Customized libxml2
 
-### Customized http-parser
+#### Customized http-parser
 
-### Customized libev
+#### Customized libev
 
-### Customized date
+#### Customized date
 
-### Customized hiredis
+#### Customized hiredis
 
-### Customized lbc-101
+#### Customized lbc-101
 
-### Customized lua-5.3.5
+#### Customized lua-5.3.5
 
-### luaposix
+#### luaposix
 
-### Penlight
+#### Penlight
 
-### cjson-lua
+#### cjson-lua
 
 
