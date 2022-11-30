@@ -12,19 +12,28 @@ Designed to be an open source, cross platform lua runtime environment for constr
 Node.js, golang
 
 
-## Components
+## Modules
 ### evpoco
-Platform for runnning of lua code in asynchronous and event driven manner. 
-This module provides 2 modules
+Platform for runnning of lua code in asynchronous and event driven manner. This module provides 2 components
 
-1. evlua: A standalone module to execute lua code in event driven manner
+1. evlua: A standalone component to execute lua code in event driven manner
 2. evluaserver: A HTTP(S) based server that listens to HTTP requests and hands them over to a lua script for processing
 
-The above two modules are equipped with libraries that act as utilities to achieve various functionalities
+The components are equipped with libraries that provide utilities to achieve various functionalities
 
-1. platform: A library tha provides various functions to access platform level functions
-2. server request (evluaserver): A library to access various parts of the request that has arrived
-3. server response (evluaserver): A library to generate the response to be sent to the clinet
+1. Platform: A library tha provides various functions to access platform level functions
+2. Server (included in the platform)
+	1. Request: A library to access various parts of the request that has arrived
+	2. Response: A library to generate the response to be sent to the clinet
+3. Client (evclient)
+	1. TCP/HTTP(s) client connection
+	2. Request: Library to construct a HTTP(s) request to be sent to a service
+	3. Response: Library to access various parts of the response from a service
+4. TLS/SSL support (evlnetssl) 
+5. Socket connection pool
+6. Websockets
+	1. Websocket client
+	2. Webscket server
 
 
 ### service_utils
