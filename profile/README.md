@@ -42,7 +42,7 @@ The components offer different features to an application
  
 
 ### service_utils
-A Collection of lua components built on top of evpoco. These components provide an interface to evpoco components to lua and provide certain additional features necessary for developing a web application as well as a standalone lua application.
+A Collection of lua components built on top of evpoco. These components provide an interface to evpoco components to lua and provide certain additional features, together necessary for developing a evlua "web application" as well as a "standalone application".
 
 The general assumption in the applications is that IO is event driven and cooperative multi-tasking is achieved, while having a fixed number of underlying OS threads.
 
@@ -55,7 +55,12 @@ The library itself depends on a host of other libraries listed within this docum
 	3. password_generator: A set of reusable functions for random number generation and new password generation
 		1. utils: Generation of random integer and generation of random number of bytes
 	4. msg_literal: A utility to generate a message based on a template (format string)
-2. 
+2. jwt: A minimalist jwt class to generate, sign and veriy jwt tokens
+3. WS (Web Sockets):
+	1. web_socket: A class to connect fresh and accept incoming websocket connection requests.
+	2. ws_util: Class to close, ping, send and receive messages, access websockets from pool, 
+4. SMTP client
+5. 
 
 ### efio
 Library with these facilities 
