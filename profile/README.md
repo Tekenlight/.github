@@ -48,7 +48,7 @@ The general assumption in the applications is that IO is event driven and cooper
 
 The library itself depends on a host of other libraries listed within this document. Most significant ones being luaffifb, lua_schema, efio
 
-#### Components
+##### Components
 1. Common: A set of utilities
 	1. User context: A lua class that contains access to the environment (user session, database connection, etc...) for an application service
 	2. pool_repos: Provides a repository of named connection pools, currently used in websockets
