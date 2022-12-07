@@ -49,7 +49,7 @@ The general assumption in the applications is that IO is event driven and cooper
 The library itself depends on a host of other libraries listed within this document. Most significant ones being luaffifb, lua_schema, efio
 
 ##### Components
-1. Common: A set of utilities
+1. common: A set of utilities
 	1. User context: A lua class that contains access to the environment (user session, database connection, etc...) for an application service
 	2. pool_repos: Provides a repository of named connection pools, currently used in websockets
 	3. password_generator: A set of reusable functions for random number generation and new password generation
@@ -67,7 +67,18 @@ The library itself depends on a host of other libraries listed within this docum
 	1. gtbl: Tool to specify and generate mapping between lua objects and RDBMS (Currently only Postgresql) tables
 	2. Library class to achieve SELECT/INSERT/UPDATE/DELETE of one record of a table
 	3. Libraty class to achieve single table CRUD operations
-7. 
+7. db: A set of connectors to different databases (Currently only Postgresql and REDIS [WIP])
+	1. client_params: A class to hold a set of connection parameters to different databases
+	2. ev_database: util to make connection to a database
+	3. ev_postgres: Interface to postgresql, provides functions to make connection and execute DML statements
+	4. ev_redis: Interace to access data (read and write) in REDIS
+8. REST: Collection of classes useful in handling of REST requests, making new ones as well as responding to incoming requests
+	1. gidl : Tool to specify as well as generate REST API mapping
+	2. context_harness: Class to create a new operating context object, which is an input to all methods implementing REST API
+	3. service_client: REST client for interfacing serices which are within one LAN
+	4. 	external_service_client: REST client for interfacing services across internet
+	5. controller: provides single point of entry to all REST requests "handle_request", to which handle to request and response are passed. This in turn locates the lua class and method to be run for the request based on url
+ 
 
 ### efio
 Library with these facilities 
