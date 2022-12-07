@@ -60,7 +60,14 @@ The library itself depends on a host of other libraries listed within this docum
 	1. web_socket: A class to connect fresh and accept incoming websocket connection requests.
 	2. ws_util: Class to close, ping, send and receive messages, access websockets from pool, 
 4. SMTP client
-5. 
+5. schemarules:
+	1. gval: Tool to specify and generate validation checks that should be done on a given input object to a REST API
+	2. Library function to execute the checks
+6. orm: 
+	1. gtbl: Tool to specify and generate mapping between lua objects and RDBMS (Currently only Postgresql) tables
+	2. Library class to achieve SELECT/INSERT/UPDATE/DELETE of one record of a table
+	3. Libraty class to achieve single table CRUD operations
+7. 
 
 ### efio
 Library with these facilities 
