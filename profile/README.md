@@ -95,7 +95,7 @@ This is a library for calling C function and manipulating C types from lua. It i
 
 This is a fork of https://github.com/facebookarchive/luaffifb which is inturn a fork of https://github.com/jmckaskill/luaffi
 
-Certain additional functions have been added over and above the capablities that are in the parent repository.
+A few additional functions have been added over and above the capablities that are in the parent repository, which are documented in the repository
 
 
 ### lua_schema
