@@ -91,6 +91,11 @@ Library with these facilities
 
 
 ### Customized luaffifb
+This is a library for calling C function and manipulating C types from lua. It is designed to be interface compatible with the FFI library in LuaJIT (see http://luajit.org/ext_ffi.html). It can parse C function declarations and struct definitions that have been directly copied out of C header files and into lua source as a string.
+
+This is a fork of https://github.com/facebookarchive/luaffifb which is inturn a fork of https://github.com/jmckaskill/luaffi
+
+Certain additional functions have been added over and above the capablities that are in the parent repository.
 
 
 ### lua_schema
