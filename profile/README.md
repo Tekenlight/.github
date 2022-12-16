@@ -130,6 +130,8 @@ lua_schema provides with tools and lua library for
 
 #### Customized lua-5.3.5
 
+#### Customized hiredis
+
 #### luaposix
 
 #### Penlight
