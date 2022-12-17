@@ -44,7 +44,7 @@ The components offer different features to an application
  
 
 ### service_utils
-[A framework which provides a layer of stubs and utilities to facilitate classes implimented in lua be exposed as REST API ](https://github.com/Tekenlight/service_utils/wiki)
+[Framework which provides a layer of stubs and utilities to facilitate classes implimented in lua be exposed as REST API ](https://github.com/Tekenlight/service_utils/wiki)
 
 ### efio
 Library with these facilities 
@@ -57,12 +57,7 @@ Library with these facilities
 
 
 ### Customized luaffifb
-This is a library for calling C function and manipulating C types from lua. It is designed to be interface compatible with the FFI library in LuaJIT (see http://luajit.org/ext_ffi.html). It can parse C function declarations and struct definitions that have been directly copied out of C header files and into lua source as a string.
-
-This is a fork of https://github.com/facebookarchive/luaffifb which is inturn a fork of https://github.com/jmckaskill/luaffi
-
-A few additional functions have been added over and above the capablities that are in the parent repository, which are documented in the repository
-
+[Framework for calling C function and manipulating C types from lua](https://github.com/Tekenlight/luaffifb/wiki)
 
 ### lua_schema
 lua_schema provides with tools and lua library for
