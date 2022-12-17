@@ -44,43 +44,7 @@ The components offer different features to an application
  
 
 ### service_utils
-A Collection of lua components built on top of evpoco. These components provide an interface to evpoco components to lua and provide certain additional features, together necessary for developing a evlua "web application" as well as a "standalone application".
-
-The general assumption in the applications is that IO is event driven and cooperative multi-tasking is achieved, while having a fixed number of underlying OS threads.
-
-The library itself depends on a host of other libraries listed within this document. Most significant ones being luaffifb, lua_schema, efio
-
-##### Components
-1. common: A set of utilities
-	1. User context: A lua class that contains access to the environment (user session, database connection, etc...) for an application service
-	2. pool_repos: Provides a repository of named connection pools, currently used in websockets
-	3. password_generator: A set of reusable functions for random number generation and new password generation
-		1. utils: Generation of random integer and generation of random number of bytes
-	4. msg_literal: A utility to generate a message based on a template (format string)
-2. jwt: A minimalist jwt class to generate, sign and veriy jwt tokens
-3. WS (Web Sockets):
-	1. web_socket: A class to connect fresh and accept incoming websocket connection requests.
-	2. ws_util: Class to close, ping, send and receive messages, access websockets from pool, 
-4. SMTP client
-5. schemarules:
-	1. gval: Tool to specify and generate validation checks that should be done on a given input object to a REST API
-	2. Library function to execute the checks
-6. orm: 
-	1. gtbl: Tool to specify and generate mapping between lua objects and RDBMS (Currently only Postgresql) tables
-	2. Library class to achieve SELECT/INSERT/UPDATE/DELETE of one record of a table
-	3. Libraty class to achieve single table CRUD operations
-7. db: A set of connectors to different databases (Currently only Postgresql and REDIS [WIP])
-	1. client_params: A class to hold a set of connection parameters to different databases
-	2. ev_database: util to make connection to a database
-	3. ev_postgres: Interface to postgresql, provides functions to make connection and execute DML statements
-	4. ev_redis: Interace to access data (read and write) in REDIS
-8. REST: Collection of classes useful in handling of REST requests, making new ones as well as responding to incoming requests
-	1. gidl : Tool to specify as well as generate REST API mapping
-	2. context_harness: Class to create a new operating context object, which is an input to all methods implementing REST API
-	3. service_client: REST client for interfacing serices which are within one LAN
-	4. 	external_service_client: REST client for interfacing services across internet
-	5. controller: provides single point of entry to all REST requests "handle_request", to which handle to request and response are passed. This in turn locates the lua class and method to be run for the request based on url
- 
+[A framework which provides a layer of stubs and utilities to facilitate classes implimented in lua be exposed as REST API ](https://github.com/Tekenlight/service_utils/wiki)
 
 ### efio
 Library with these facilities 
