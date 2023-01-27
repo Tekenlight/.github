@@ -1,6 +1,6 @@
 # evlua
 
-<img src="../doc/images/logotk.png" width="200"/>
+<img src="doc/images/logotk.png" width="200"/>
 
 Designed to be an open source, cross platform lua runtime environment for construction of scalable web applications
 
@@ -82,5 +82,5 @@ It also provides utility classes like SMTP, HTTP, JWT, ORM among  others for imp
 * Distribution of evlua for download and usage
 
 
-[overview]: ../doc/images/evlua_overview.png "Overview"
+[overview]: doc/images/evlua_overview.png "Overview"
 
