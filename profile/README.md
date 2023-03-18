@@ -13,6 +13,9 @@ Designed to be an open source, cross platform lua runtime environment for constr
 #### Inspired by
 Node.js, golang
 
+#### Sample implementation of a simple [REST API](https://github.com/Tekenlight/service_utils/blob/main/samples/REST/rest_sample.md)
+
+#### Sample implementation of a simple [CRUD FUNCTIONALITY](https://github.com/Tekenlight/service_utils/blob/main/samples/CRUD/crud_sample.md)
 
 ## Modules
 
