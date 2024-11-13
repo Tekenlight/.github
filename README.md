@@ -1,7 +1,5 @@
 # evlua
 
-<img src="doc/images/logotk.png" width="200"/>
-
 Designed to be an open source, cross platform lua runtime environment for construction of scalable web applications
 
 #### Goals
